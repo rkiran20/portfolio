@@ -174,6 +174,7 @@ const StyledImage = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
   img {
     object-fit: cover;
     overflow: hidden;

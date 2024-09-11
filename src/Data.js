@@ -72,7 +72,7 @@ export const projectsData = [
     projectName: "pathFinder",
     image: p5image1,
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed dolorem nesciunt corrupti, omnis voluptate nam in ea molestias recusandae voluptatem. Animi perspiciatis mollitia sint ipsum, iure fugiat. Excepturi, adipisci.",
+      "Path-Finding Algorithm Visualizer is an interactive tool I developed using React, allowing users to visualize and compare various path-finding algorithms like BFS, DFS, and Dijkstra's Algorithm. The project offers a clear and dynamic user interface that showcases how these algorithms explore and solve complex grids in real-time.",
     skills: ["Data-structures and algorithms", "DFS", "bfs", "dijkstra"],
   },
 ];
@@ -156,16 +156,16 @@ export const projectDetails = [
     liveServer:
       "https://film-frames-i5yvk3ezl-ravi-kirans-projects-4385fefe.vercel.app/",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed dolorem nesciunt corrupti, omnis voluptate nam in ea molestias recusandae voluptatem. Animi perspiciatis mollitia sint ipsum, iure fugiat. Excepturi, adipisci.",
+      "Path-Finding Algorithm Visualizer is an interactive tool I developed using React, allowing users to visualize and compare various path-finding algorithms like BFS, DFS, and Dijkstra's Algorithm. The project offers a clear and dynamic user interface that showcases how these algorithms explore and solve complex grids in real-time.",
     skills: ["Data-structures and algorithms", "DFS", "bfs", "dijkstra"],
     image1: p5image2,
-    goal: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed dolorem nesciunt corrupti, omnis voluptate nam in ea molestias recusandae voluptatem. Animi perspiciatis mollitia sint ipsum, iure fugiat. Excepturi, adipisci.",
+    goal: "The primary goal of this project was to create a platform that simplifies the learning and understanding of fundamental path-finding algorithms. By providing visual feedback for each algorithm, users can explore how different strategies approach grid traversal and optimal path selection. The project encourages hands-on exploration, enabling users to interact with different algorithms and grid configurations to deepen their comprehension of these concepts.",
     image2: p5image3,
     aboutProject:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed dolorem nesciunt corrupti, omnis voluptate nam in ea molestias recusandae voluptatem. Animi perspiciatis mollitia sint ipsum, iure fugiat. Excepturi, adipisci.",
+      "This project was built using React for the front end to manage the interactive user interface and dynamic rendering of grids and animations. React’s useContext was utilized to effectively manage state, preventing prop drilling. Additionally, advanced React hooks like useState and useEffect were leveraged to handle algorithm execution and re-rendering smoothly. CSS was used for grid styling and animations, offering a clean and responsive UI. The project remains lightweight while providing powerful visualizations of complex algorithms.",
     image3: p5image1,
     stack: ["S", "t", "a", "c", "k"],
     problemsAndThoughts:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed dolorem nesciunt corrupti, omnis voluptate nam in ea molestias recusandae voluptatem. Animi perspiciatis mollitia sint ipsum, iure fugiat. Excepturi, adipisci.",
+      "Developing this project introduced several challenges, particularly in synchronizing animations with the real-time performance of algorithms like BFS, DFS, and Dijkstra's. Managing the state efficiently across multiple components without introducing unnecessary prop drilling was crucial, and this was achieved using React’s useContext. This approach allowed me to improve not just my understanding of algorithmic concepts, but also my skills in component architecture and state management in React. The process reinforced the importance of building intuitive, user-centric interfaces that make learning more interactive and engaging.",
   },
 ];
