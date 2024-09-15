@@ -31,6 +31,7 @@ const OurWork = () => {
                 <ProjectDetails>
                   <h3>{project.projectName}</h3>
                   <p>{project.details}</p>
+                  <b>Read more</b>
                   <SkillWrapper>
                     {project.skills.map((skill) => (
                       <SkillBtn key={skill}>{skill}</SkillBtn>
@@ -98,6 +99,14 @@ const ProjectDetails = styled(motion.div)`
     transition: 1s ease;
     text-decoration: none;
   }
+  b {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #dfdbdb;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding: 1rem 0rem 0rem;
+  }
   p {
     color: #dfdbdb;
     font-size: 1.2rem;
@@ -105,13 +114,13 @@ const ProjectDetails = styled(motion.div)`
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-    padding: 0rem;
-    margin: 1rem 0rem;
+    padding: 0.5rem 0rem;
+    margin: 0rem;
     transition: 1s ease;
     text-decoration: none;
   }
   @media (max-width: 600px) {
-    padding: 0rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
   }
 `;
 

@@ -36,10 +36,7 @@ const Experience = () => {
             setIsClicked1(!isClicked1);
           }}
         >
-          <Circle1>
-            {" "}
-            <img src={logo1} alt="logo"></img>{" "}
-          </Circle1>
+          <Circle1> {/* <img src={logo1} alt="logo"></img>{" "} */}</Circle1>
           <h1>Software Engineer Intern</h1>
           <h2>Saeternus </h2>
           <h3> April 2024 - July 2024</h3>
@@ -65,9 +62,7 @@ const Experience = () => {
             setIsClicked2(!isClicked2);
           }}
         >
-          <Circle2>
-            <img src={image} alt="logo"></img>{" "}
-          </Circle2>
+          <Circle2>{/* <img src={image} alt="logo"></img>{" "} */}</Circle2>
           <h1> Frontend Developer Intern</h1>
           <h2>Technocolabs Softwares</h2>
           <h3> Jan 2024 - March 2024</h3>
@@ -187,7 +182,8 @@ const Experience1 = styled(motion.div)`
   h3 {
     display: none;
     @media (max-width: 1200px) {
-      display: contents;
+      display: block;
+      padding-bottom: 2rem;
     }
   }
   p {
@@ -199,7 +195,7 @@ const Experience1 = styled(motion.div)`
     overflow: hidden;
     transition: all 0.5s ease;
     @media (max-width: 1200px) {
-      margin-top: 2rem;
+      margin-top: 0rem;
     }
     @media (max-width: 500px) {
       font-size: 1rem;
@@ -228,7 +224,7 @@ const Circle1 = styled(motion.div)`
   height: 7rem;
   border: 5px solid white;
   border-radius: 50%;
-  background-color: white;
+  background-color: #46383c;
   position: absolute;
   overflow: hidden;
   right: -11.8rem;
@@ -247,6 +243,7 @@ const Circle1 = styled(motion.div)`
 const Circle2 = styled(Circle1)`
   right: 0rem;
   left: -12rem;
+  background-color: #705549;
   @media (max-width: 1200px) {
     left: -11.8rem;
   }

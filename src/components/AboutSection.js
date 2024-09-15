@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import home1 from "../img/home1.jpg";
 import { About, Hide, Description, Image } from "../Styles";
 import { motion } from "framer-motion";
 import { fade, photoAnim, titleAnim } from "../animation";

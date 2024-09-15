@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { MenuTransition, pageAnimation } from "../animation";
 
 const Nav = () => {
   const location = useLocation();
@@ -13,14 +14,18 @@ const Nav = () => {
   return (
     <Wrapper>
       <StyledNav>
-        <h1>
+        <h1
+          onClick={() => {
+            setSideBar(false);
+          }}
+        >
           <Link to="/">Ravi Kiran</Link>
         </h1>
         <MenuBar
           onClick={() => {
             setSideBar(!sideBar);
           }}
-          icon={faBars}
+          icon={sideBar ? faXmark : faBars}
         ></MenuBar>
         <ul>
           <li>
@@ -72,28 +77,35 @@ const Nav = () => {
         </ul>
       </StyledNav>
       {sideBar && (
-        <MenuUl
-          onClick={() => {
-            setSideBar(!sideBar);
-          }}
-        >
-          <WrongMark icon={faXmark} />
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/myWork">Projects</Link>
-          </li>
-          <li>
-            <Link to="/experience">Experience </Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </MenuUl>
+        <AnimatePresence>
+          <MenuUl
+            variants={MenuTransition}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+            onClick={() => {
+              setSideBar(!sideBar);
+            }}
+          >
+            {/* <WrongMark icon={faXmark} /> */}
+
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/myWork">
+              <li>Projects</li>
+            </Link>
+            <Link to="/experience">
+              <li>Experience</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact</li>
+            </Link>
+          </MenuUl>
+        </AnimatePresence>
       )}
     </Wrapper>
   );
@@ -103,6 +115,10 @@ const Wrapper = styled(motion.div)`
   position: sticky;
   top: 0px;
   z-index: 99;
+`;
+
+const MenuWrapper = styled(motion.div)`
+  transition: all ease 1s;
 `;
 
 const WrongMark = styled(FontAwesomeIcon)`
@@ -115,26 +131,37 @@ const WrongMark = styled(FontAwesomeIcon)`
 `;
 
 const MenuUl = styled(motion.ul)`
-  position: fixed;
-  top: 0px;
+  position: absolute;
+  width: 100%;
+  top: -20px;
   right: 0px;
-  background-color: #282828;
+  background-color: rgba(231, 225, 225, 0.9);
   margin-top: 0rem;
-  z-index: 100;
-  padding: 2rem;
+  z-index: 9;
+  padding: 2rem 2rem 0rem;
+  margin-top: 7rem;
   a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: lighter;
     font-size: 2rem;
+    @media (max-width: 450px) {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
   }
   li {
-    color: white;
+    color: black;
     list-style-type: none;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0.7rem;
+    font-weight: lighter;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    @media (max-width: 450px) {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
     &:hover {
       transform: scale(1.1);
       color: #1eb6f7;
@@ -147,8 +174,11 @@ const MenuBar = styled(FontAwesomeIcon)`
   @media (max-width: 900px) {
     display: block;
     height: 3rem;
-    color: white;
+    color: ${(props) => (props.sideBar ? "red" : "white")};
     cursor: pointer;
+    @media (max-width: 450px) {
+      height: 1.5rem;
+    }
   }
 `;
 
@@ -180,6 +210,9 @@ const StyledNav = styled.nav`
     transition: all 0.5s ease;
     &:hover {
       color: #1eb6f7;
+    }
+    @media (max-width: 450px) {
+      font-size: 1.5rem;
     }
   }
   ul {

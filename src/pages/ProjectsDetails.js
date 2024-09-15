@@ -14,6 +14,8 @@ import {
 } from "../animation";
 import { projectDetails } from "../Data";
 import { Link, useLocation } from "react-router-dom";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SpecificProjectDetails = () => {
   const location = useLocation();
@@ -52,6 +54,13 @@ const SpecificProjectDetails = () => {
             ))}
             <StyledLink to={data.liveServer} target="_blank">
               <h3>Check Live Site</h3>
+              <a
+                href={data.gitHubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon={faGithub} />
+              </a>
             </StyledLink>
           </Heading>
           <StyledLink to="/myWork">
@@ -142,8 +151,24 @@ const SpecificProjectDetails = () => {
   );
 };
 
+const Icon = styled(FontAwesomeIcon)`
+  color: white;
+  height: 2rem;
+  @media (max-width: 493px) {
+    height: 1.5rem;
+  }
+`;
+
 const StyledLink = styled(Link)`
   text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  a {
+    margin-top: 2rem;
+    @media (max-width: 660px) {
+      margin-top: 0rem;
+    }
+  }
 `;
 
 const HeadingWrapper = styled.div`
@@ -202,7 +227,7 @@ const Heading = styled(motion.h1)`
   margin: 2rem 1rem 0rem 4rem;
   h3 {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
     line-height: 0rem;
     margin-top: 2.2rem;
     margin-left: 3rem;

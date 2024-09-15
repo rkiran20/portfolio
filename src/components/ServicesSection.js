@@ -11,21 +11,27 @@ import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
+  const [element1, controls1] = useScroll();
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 800px)").matches
   );
   const animationVariant = isMobile ? scrollRevealLeft : scrollReveal;
   return (
-    <Services
-      variants={animationVariant}
-      animate={controls}
-      initial="hidden"
-      ref={element}
-    >
-      <Image>
+    <Services>
+      <Image
+        variants={animationVariant}
+        animate={controls}
+        initial="hidden"
+        ref={element}
+      >
         <img src={home3} alt="logo" />
       </Image>
-      <SerContent>
+      <SerContent
+        variants={animationVariant}
+        animate={controls1}
+        initial="hidden"
+        ref={element1}
+      >
         <h2>
           High <span>quality</span> services
         </h2>

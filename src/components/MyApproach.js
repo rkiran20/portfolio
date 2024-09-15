@@ -42,7 +42,7 @@ const MyApproach = () => {
           onHoverEnd={() => {
             SetOnHover1(!onHover1);
           }}
-          style={{ backgroundColor: onHover1 && "#c7c5f4" }}
+          style={{ backgroundColor: onHover1 && "#29232e" }}
         >
           {!onHover1 ? (
             <h2>Phase 1</h2>
@@ -77,7 +77,7 @@ const MyApproach = () => {
           onHoverEnd={() => {
             SetOnHover2(!onHover2);
           }}
-          style={{ backgroundColor: onHover2 && "#e7abe0" }}
+          style={{ backgroundColor: onHover2 && "#46383c" }}
         >
           {!onHover2 ? (
             <h2>Phase 2</h2>
@@ -112,7 +112,7 @@ const MyApproach = () => {
           onHoverEnd={() => {
             SetOnHover3(!onHover3);
           }}
-          style={{ backgroundColor: onHover3 && "#c0e6f2" }}
+          style={{ backgroundColor: onHover3 && "#705549" }}
         >
           {!onHover3 ? (
             <h2>Phase 3</h2>
@@ -152,7 +152,7 @@ const MyAppCon = styled(motion.div)`
   overflow: hidden;
   &:hover {
     border-color: black;
-    box-shadow: 0px 0px 50px rgba(249, 190, 87, 0.6);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
   }
   @media (max-width: 1020px) {
     width: 60vh;
@@ -193,7 +193,7 @@ const Content = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3e3c3c;
+    color: #e8e5e5;
     @media (max-width: 450px) {
       font-size: 1.2rem;
     }
@@ -205,7 +205,7 @@ const Content = styled(motion.div)`
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    color: #0a0101;
+    color: #f2f2f2;
     @media (max-width: 450px) {
       font-size: 0.8rem;
     }

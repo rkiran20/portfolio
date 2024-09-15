@@ -3,13 +3,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { skillsData } from "../Data";
 import useScroll from "./useScroll";
-import {
-  pageAnimation,
-  photoAnimation,
-  scrollRevealRight,
-  titleAnimRev,
-  upDown,
-} from "../animation";
+import image from "../img/myImage1.jpg";
+import { pageAnimation, photoAnimSmall, upDown } from "../animation";
 
 const MyAbout = () => {
   const [element, controls] = useScroll();
@@ -20,17 +15,12 @@ const MyAbout = () => {
       initial="hidden"
       animate="show"
     >
-      <motion.h1 variants={titleAnimRev} initial="hidden" animate="show">
-        About Me
-      </motion.h1>
+      <motion.h1>About Me</motion.h1>
       <AboutSectionWrapper>
-        <MyImage variants={photoAnimation} initial="hidden" animate="show">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8722a0KeLnX_ee2jOq93rW1RH8u2TkijGg&s"
-            alt="abtImage"
-          ></img>
+        <MyImage variants={photoAnimSmall} initial="hidden" animate="show">
+          <img src={image} alt="abtImage"></img>
         </MyImage>
-        <MyIntro variants={scrollRevealRight} animate="show" initial="hidden">
+        <MyIntro>
           <p>
             <b>I'm</b> a 21-year-old recent graduate from <b> IIT Kanpur </b>{" "}
             with hands-on experience in front-end development, gained through
@@ -47,9 +37,12 @@ const MyAbout = () => {
             thats maintainable and easy to understand{" "}
           </p>
           <p>
-            I now spend a lot more time refactoring and improving every line I
-            code I write, for the best readability and far fewer headaches and
-            also started writing Blogs.
+            Since then, I’ve been honing my skills and deepening my knowledge of
+            JavaScript. Recently, I graduated from IIT Kanpur, and I am actively
+            seeking a full-time role where I can help companies achieve their
+            goals. I now spend a lot more time refactoring and improving every
+            line I code I write, for the best readability and far fewer
+            headaches
           </p>
         </MyIntro>
       </AboutSectionWrapper>

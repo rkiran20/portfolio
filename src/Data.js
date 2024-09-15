@@ -1,15 +1,19 @@
 import p1image1 from "./img/opinionOrbit1.png";
 import p1image2 from "./img/opinionOrbit2.png";
 import p1image3 from "./img/opinionOrbit3.png";
+import p1image4 from "./img/opinionOrbit4.png";
 import p2image1 from "./img/rmtDev1.png";
 import p2image2 from "./img/rmtDev2.png";
 import p2image3 from "./img/rmtDev3.png";
-import p3image1 from "./img/filmFrames1.png";
+import p2image4 from "./img/rmtDev4.png";
+import p3image1 from "./img/filmFrames4.png";
 import p3image2 from "./img/filmFrames2.png";
 import p3image3 from "./img/filmFrames3.png";
+import p3image4 from "./img/filmFrames1.png";
 import p4image1 from "./img/jsSounds1.png";
 import p4image2 from "./img/jsSounds2.png";
 import p4image3 from "./img/jsSounds3.png";
+import p4image4 from "./img/jsSounds4.png";
 import p5image1 from "./img/pathVisualizer1.png";
 import p5image2 from "./img/pathVisualizer2.png";
 import p5image3 from "./img/pathVisualizer3.png";
@@ -23,6 +27,7 @@ export const skillsData = [
   "React",
   "Redux",
   "Next JS",
+  "Type Script",
   "Styled Components",
 ];
 
@@ -38,7 +43,7 @@ export const projectsData = [
   {
     id: 1,
     projectName: "opinionOrbit",
-    image: p1image1,
+    image: p1image4,
     details:
       "OpinionOrbit is a React application built for the students of IIT Kanpur. I developed the project from scratch using React and MongoDB to provide a platform where students can share and explore opinions about various places on campus. This opinions platform required a well-structured codebase, with different components handling user interactions, review submissions, and hashtag-based navigation for easy exploration of feedback.",
     skills: ["React", "mongodb", "typescript", "css", "html"],
@@ -46,7 +51,7 @@ export const projectsData = [
   {
     id: 2,
     projectName: "rmtDev",
-    image: p2image1,
+    image: p2image4,
     details:
       "rmtDev is a React application designed to provide a comprehensive platform for remote job opportunities in the development field. I built this project using React to create a dynamic interface that pulls job data from an API. This job platform features a user-friendly layout where users can easily browse and search for remote development jobs. The project leverages React's component-based architecture for efficient data handling and UI updates, ensuring a smooth and responsive user experience.",
     skills: ["React", "Api's", "typescript", "css", "html"],
@@ -54,7 +59,7 @@ export const projectsData = [
   {
     id: 3,
     projectName: "filmFrames",
-    image: p3image1,
+    image: p3image4,
     details:
       "filmFrames is a react application built for people who want to look on the images of their desired movies. i built the project from scratch where i am the designer and developer for the website with react,redux-toolkit and styled components as css. this web application required a lot of heavy lifting to create a universal recent-films data, upcoming films data and also most rated film data.",
     skills: ["React", "Redux", "Javascript", "styled-components", "html"],
@@ -62,7 +67,7 @@ export const projectsData = [
   {
     id: 4,
     projectName: "jsSounds",
-    image: p4image1,
+    image: p4image4,
     details:
       "jsSounds is a JavaScript application designed for music enthusiasts to explore how different drum sounds blend when tuned together. I developed this project using JavaScript, relying heavily on Object-Oriented Programming principles to structure the application efficiently.",
     skills: ["javascript", "css", "html"],
@@ -81,11 +86,11 @@ export const projectDetails = [
   {
     id: 1,
     name: ["o", "p", "i", "n", "i", "o", "n", "O", "r", "b", "i", "t"],
-    liveServer:
-      "https://film-frames-i5yvk3ezl-ravi-kirans-projects-4385fefe.vercel.app/",
+    liveServer: "https://opinion-orbit.vercel.app/",
+    gitHubLink: "https://github.com/rkiran20/opinionOrbit",
     details:
       "OpinionOrbit is a React application built for the students of IIT Kanpur. I developed the project from scratch using React and MongoDB to provide a platform where students can share and explore opinions about various places on campus. This opinions platform required a well-structured codebase, with different components handling user interactions, review submissions, and hashtag-based navigation for easy exploration of feedback.",
-    skills: ["React", "mongodb", "typescript", "css", "html"],
+    skills: ["React", "Mongodb", "Typescript", "CSS", "HTML"],
     image1: p1image2,
     goal: "The platform focuses on creating a centralized place where students can provide feedback about their experiences, helping others make informed decisions. By leveraging a simple hashtag-based navigation system, users can click on relevant hashtags (e.g., #Hall12, #newSac) to explore specific categories of reviews.This project addresses the need for localized, student-specific information about campus amenities and experiences, fostering a more connected and informed student body.",
     image2: p1image3,
@@ -100,9 +105,10 @@ export const projectDetails = [
     id: 2,
     name: ["r", "m", "t", "D", "e", "v"],
     liveServer: "https://rmt-dev-ten.vercel.app/",
+    gitHubLink: "https://github.com/rkiran20/rmt-dev",
     details:
       "rmtDev is a React application designed to provide a comprehensive platform for remote job opportunities in the development field. I built this project using React to create a dynamic interface that pulls job data from an API. This job platform features a user-friendly layout where users can easily browse and search for remote development jobs. The project leverages React's component-based architecture for efficient data handling and UI updates, ensuring a smooth and responsive user experience.",
-    skills: ["React", "Api's", "typescript", "css", "html"],
+    skills: ["React", "Api's", "Typescript", "CSS", "HTML"],
     image1: p2image2,
     goal: "rmtDev is a platform that focuses on providing developers with access to remote job opportunities, helping them find suitable positions more efficiently. By leveraging features like filtering, sorting, and pagination, users can easily navigate through job listings. This project addresses the growing demand for remote developer jobs, offering a streamlined solution for developers to discover relevant opportunities, while enhancing the job search experience with user-friendly tools for managing large datasets.",
     image2: p2image3,
@@ -116,11 +122,11 @@ export const projectDetails = [
   {
     id: 3,
     name: ["f", "i", "l", "m", "F", "r", "a", "m", "e", "s"],
-    liveServer:
-      "https://film-frames-i5yvk3ezl-ravi-kirans-projects-4385fefe.vercel.app/",
+    gitHubLink: "https://github.com/rkiran20/movies-spot",
+    liveServer: "https://film-frames.vercel.app/",
     details:
       "filmFrames is a react application built for people who want to look on the images of their desired movies. i built the project from scratch where i am the designer and developer for the website with react,redux-toolkit and styled components as css. this web application required a lot of heavy lifting to create a universal recent-films data, upcoming films data and also most rated film data. ",
-    skills: ["React", "Redux", "Javascript", "styled-components", "html"],
+    skills: ["React", "Redux", "Javascript", "Styled-Components", "HTML"],
     image1: p3image2,
     goal: "To develop a comprehensive, user-friendly web application that enables movie enthusiasts to explore visual content from a diverse array of films - including recent releases, upcoming movies, and critically acclaimed works - with an added feature allowing users to search for specific films, thereby enhancing discoverability and personalizing the browsing experience while showcasing advanced React development skills and efficient data management.",
     image2: p3image3,
@@ -136,10 +142,11 @@ export const projectDetails = [
   {
     id: 4,
     name: ["j", "s", "S", "o", "u", "n", "d", "s"],
+    gitHubLink: "https://github.com/rkiran20/js-sounds",
     liveServer: "https://js-sounds.vercel.app/",
     details:
       "jsSounds is a JavaScript application designed for music enthusiasts to explore how different drum sounds blend when tuned together. I developed this project using JavaScript, relying heavily on Object-Oriented Programming principles to structure the application efficiently.",
-    skills: ["javascript", "css", "html"],
+    skills: ["Javascript", "CSS", "HTML"],
     image1: p4image2,
     goal: "JsSounds is an interactive web-based drum machine application that allows users to create and play custom drum patterns. This project showcases a dynamic and engaging user interface where participants can experiment with different drum sounds, adjust tempos, and create unique rhythmic compositions. By combining audio manipulation with interactive controls, JsSounds offers an accessible and fun way for both novice and experienced musicians to explore rhythm creation in a digital environment.",
     image2: p4image3,
@@ -153,11 +160,11 @@ export const projectDetails = [
   {
     id: 5,
     name: ["p", "a", "t", "h", "F", "i", "n", "d", "e", "r"],
-    liveServer:
-      "https://film-frames-i5yvk3ezl-ravi-kirans-projects-4385fefe.vercel.app/",
+    gitHubLink: "https://github.com/rkiran20/path-finder",
+    liveServer: "https://path-finder-lac.vercel.app/",
     details:
       "Path-Finding Algorithm Visualizer is an interactive tool I developed using React, allowing users to visualize and compare various path-finding algorithms like BFS, DFS, and Dijkstra's Algorithm. The project offers a clear and dynamic user interface that showcases how these algorithms explore and solve complex grids in real-time.",
-    skills: ["Data-structures and algorithms", "DFS", "bfs", "dijkstra"],
+    skills: ["Data-structures and algorithms", "DFS", "BFS", "Dijkstra's"],
     image1: p5image2,
     goal: "The primary goal of this project was to create a platform that simplifies the learning and understanding of fundamental path-finding algorithms. By providing visual feedback for each algorithm, users can explore how different strategies approach grid traversal and optimal path selection. The project encourages hands-on exploration, enabling users to interact with different algorithms and grid configurations to deepen their comprehension of these concepts.",
     image2: p5image3,

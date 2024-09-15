@@ -18,6 +18,7 @@ export const About = styled(motion.div)`
     align-items: start;
     justify-content: initial;
     margin-left: 2rem;
+    margin-top: 4rem;
     min-height: auto;
   }
 `;
@@ -100,6 +101,7 @@ export const Image = styled.div`
 
   @media (max-width: 450px) {
     margin-left: 0rem;
+    margin-top: 0rem;
     width: 100%;
     flex: 0;
   }
