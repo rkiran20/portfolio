@@ -114,7 +114,7 @@ const Heading = styled(motion.h2)`
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: rgb(203 172 249);
+  color: #23d997;
 `;
 
 const ExperiencesWrapper = styled(motion.div)`

@@ -296,7 +296,7 @@ const Stack = styled(motion.div)`
 
 const Skills = styled(motion.div)`
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   text-align: center;
   justify-content: center;
   color: white;

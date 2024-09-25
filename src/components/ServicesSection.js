@@ -181,6 +181,7 @@ const Card = styled.div`
       background: white;
       color: black;
       padding: 1rem;
+      border-radius: 1rem;
       @media (max-width: 1050px) {
         margin-left: 0.5rem;
         padding: 0.5rem;

@@ -164,7 +164,7 @@ const MenuUl = styled(motion.ul)`
     }
     &:hover {
       transform: scale(1.1);
-      color: #1eb6f7;
+      color: #23d997;
     }
   }
 `;
@@ -188,6 +188,7 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  align-items: center;
   padding: 1rem 10rem;
   background-color: #282828;
   position: sticky;
@@ -209,7 +210,7 @@ const StyledNav = styled.nav`
     font-size: 2rem;
     transition: all 0.5s ease;
     &:hover {
-      color: #1eb6f7;
+      color: #23d997;
     }
     @media (max-width: 450px) {
       font-size: 1.5rem;
@@ -218,6 +219,7 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    padding-top: 5px;
     @media (max-width: 900px) {
       display: none;
     }
@@ -230,9 +232,8 @@ const StyledNav = styled.nav`
   li {
     padding-left: 5rem;
     position: relative;
-
     a {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -242,8 +243,8 @@ const Line = styled(motion.div)`
   background-color: #23d997;
   width: 5%;
   position: absolute;
-  bottom: -80%;
-  left: 60%;
+  bottom: -30%;
+  left: 55%;
 `;
 
 export default Nav;

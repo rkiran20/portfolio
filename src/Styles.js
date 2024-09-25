@@ -36,6 +36,13 @@ export const Description = styled.div`
     }
   }
   button {
+    background-color: #23d997;
+    color: black;
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
     @media (max-width: 880px) {
       margin: 2rem 0rem 3rem;
     }
@@ -44,7 +51,7 @@ export const Description = styled.div`
       font-size: 1rem;
     }
     @media (max-width: 450px) {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       padding: 0.5rem;
       margin: 0rem 0rem 1rem;
     }
@@ -83,6 +90,7 @@ export const Image = styled.div`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    border-radius: 3rem;
     @media (max-width: 880px) {
       height: 70vh;
     }

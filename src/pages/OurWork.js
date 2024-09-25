@@ -54,7 +54,7 @@ const StyledLink = styled(Link)`
 const Wrapper = styled(motion.div)`
   background-color: black;
   h2 {
-    color: #686968;
+    color: #23d997;
     margin: auto;
     width: fit-content;
     padding: 2rem;

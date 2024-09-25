@@ -129,19 +129,28 @@ const Forms = styled.form`
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid #9ff8d7;
+    border: 2px solid white;
     resize: none;
+  }
+  textarea:focus {
+    border-color: #02f89e;
+    outline: none;
+  }
+  input:focus {
+    border-color: #02f89e;
+    outline: none;
   }
   button {
     width: 45%;
-    color: #691bdf;
+    color: #353535;
     background-color: #9ff8d7;
+    background-color: white;
     border: 2px solid black;
     border-radius: 2rem;
     &:hover {
       color: #02f89e;
       background-color: #353535;
-      border-color: #cbacf9;
+      border-color: #02f89e;
     }
   }
 `;
@@ -182,6 +191,7 @@ const MessageWrapper = styled(motion.div)`
   transition: all 1s ease;
   color: black;
   background-color: #9ff8d7;
+  background-color: white;
   &:hover {
     color: white;
     a {
@@ -199,7 +209,7 @@ const MessageWrapper = styled(motion.div)`
     display: inline-block;
     font-size: 1rem;
     text-decoration: none;
-    color: #691bdf;
+    color: #353535;
     font-weight: bolder;
     &:hover {
       color: #02f89e;
@@ -207,7 +217,7 @@ const MessageWrapper = styled(motion.div)`
   }
   &:hover {
     background-color: #353535;
-    border-color: #cbacf9;
+    border-color: #23d997;
   }
 `;
 

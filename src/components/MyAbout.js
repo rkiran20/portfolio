@@ -49,11 +49,10 @@ const MyAbout = () => {
       <SkillsWrapper>
         <motion.h1>Skills</motion.h1>
         <SkillsDes>
-          I have a strong foundation in{" "}
-          <span>Data Structures and Algorithms</span>, developed during my
-          college years. In addition to that, I have studied the documentations
-          and many Blogs of <span>JavaScript</span>, <span>React</span>, and{" "}
-          <span>Next.js</span>, and have applied this knowledge through hands-on
+          I have a strong foundation in <b>Data Structures and Algorithms</b>,
+          developed during my college years. In addition to that, I have studied
+          the documentations and many Blogs of <b>JavaScript</b>, <b>React</b>,
+          and <b>Next.js</b>, and have applied this knowledge through hands-on
           experience in various projects.
         </SkillsDes>
         <Skills>
@@ -97,13 +96,15 @@ const Skill = styled(motion.div)`
   border: 1px solid white;
   padding: 0.6rem 1rem;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(231, 229, 229, 0.4);
+  //box-shadow: 0px 0px 5px rgba(129, 228, 154, 0.9);
   cursor: pointer;
   transition: transform 1s ease;
+  color: white;
+  border: 2px solid #23d997;
   &:hover {
-    box-shadow: 0px 0px 15px rgba(244, 161, 98, 0.9);
+    //box-shadow: 0px 0px 10px rgba(129, 228, 154, 0.9);
     color: black;
-    background-color: grey;
+    background-color: #23d997;
     border: black;
   }
   @media (max-width: 500px) {
@@ -117,7 +118,7 @@ const AboutWrapper = styled(motion.div)`
     display: flex;
     justify-content: center;
     padding: 3rem 3rem;
-    color: #8b4612;
+    color: #23d997;
     font-size: 3.5rem;
   }
 `;
@@ -149,6 +150,7 @@ const MyImage = styled(motion.div)`
     overflow: hidden;
     object-fit: cover;
     transition: transform 1s ease;
+    border-radius: 2rem;
     &:hover {
       transform: scale(1.1);
     }
@@ -172,8 +174,8 @@ const MyIntro = styled(motion.div)`
     font-size: 1.7rem;
     b {
       display: inline-block;
-      color: #23d997;
-      font-size: 2.5rem;
+      /* color: #23d997; */
+      font-size: 2rem;
       @media (max-width: 500px) {
         font-size: 1.5rem;
       }
@@ -192,7 +194,7 @@ const SkillsWrapper = styled(motion.div)`
     display: flex;
     justify-content: center;
     padding: 3rem 3rem;
-    color: #8b4612;
+    color: #23d997;
     font-size: 3.5rem;
   }
 `;
