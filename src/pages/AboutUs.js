@@ -4,6 +4,7 @@ import ServicesSection from "../components/ServicesSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import MyApproach from "../components/MyApproach";
+import Approach from "../components/Approach";
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,8 @@ const AboutUs = () => {
     >
       <AboutSection />
       <ServicesSection />
-      <MyApproach />
+      {/* <MyApproach /> */}
+      <Approach />
       {/* <FaqSection /> */}
     </motion.div>
   );
